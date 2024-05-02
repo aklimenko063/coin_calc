@@ -1,0 +1,7 @@
+integration:
+  freecurrency:
+    token: fca_live_JMMFVPewxVkJhc6W4ZqMevRs57wyyZboCQmY97zx
+    baseUrl: https://api.freecurrencyapi.com/v1
+    headerTokenName: apiKey
+  coindesk:
+    baseUrl: https://api.coindesk.com/v1
