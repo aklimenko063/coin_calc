@@ -2,9 +2,9 @@ package org.javaacademy.coin_calc.service;
 
 import lombok.RequiredArgsConstructor;
 import org.javaacademy.coin_calc.config.FreeCurrencyProperties;
-import org.javaacademy.coin_calc.dto.CurrencyDtoRq;
-import org.javaacademy.coin_calc.dto.CurrencyDtoRs;
-import org.javaacademy.coin_calc.dto.FreeCurrencyDtoRs;
+import org.javaacademy.coin_calc.dto.free_currency.CurrencyDtoRq;
+import org.javaacademy.coin_calc.dto.coin.CurrencyDtoRs;
+import org.javaacademy.coin_calc.dto.free_currency.FreeCurrencyDtoRs;
 import org.javaacademy.coin_calc.exception.ServiceException;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;

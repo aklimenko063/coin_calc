@@ -1,4 +1,4 @@
-package org.javaacademy.coin_calc.dto;
+package org.javaacademy.coin_calc.dto.coin;
 
 import lombok.Value;
 

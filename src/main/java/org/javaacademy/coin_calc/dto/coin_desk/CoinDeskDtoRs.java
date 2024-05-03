@@ -1,6 +1,5 @@
-package org.javaacademy.coin_calc.dto;
+package org.javaacademy.coin_calc.dto.coin_desk;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 

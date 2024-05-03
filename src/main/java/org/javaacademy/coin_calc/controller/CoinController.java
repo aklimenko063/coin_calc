@@ -1,9 +1,9 @@
 package org.javaacademy.coin_calc.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.javaacademy.coin_calc.dto.CoinAverageDtoRs;
-import org.javaacademy.coin_calc.dto.CoinHistoryDtoRs;
-import org.javaacademy.coin_calc.dto.PageDtoRs;
+import org.javaacademy.coin_calc.dto.coin.CoinAverageDtoRs;
+import org.javaacademy.coin_calc.dto.coin.CoinHistoryDtoRs;
+import org.javaacademy.coin_calc.dto.coin.PageDtoRs;
 import org.javaacademy.coin_calc.service.CoinService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +22,7 @@ public class CoinController {
 	@GetMapping("/now")
 	public ResponseEntity getCurrentRate() {
 		return ResponseEntity
-				.status(HttpStatus.CREATED)
+				.status(HttpStatus.OK)
 				.body(coinService.getCurrentRateRub());
 	}
 

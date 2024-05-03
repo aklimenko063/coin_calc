@@ -2,7 +2,7 @@ package org.javaacademy.coin_calc.service;
 
 import lombok.RequiredArgsConstructor;
 import org.javaacademy.coin_calc.config.CoinDeskProperties;
-import org.javaacademy.coin_calc.dto.CoinDeskDtoRs;
+import org.javaacademy.coin_calc.dto.coin_desk.CoinDeskDtoRs;
 import org.javaacademy.coin_calc.exception.ServiceException;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +25,6 @@ public class CoinDeskClientService {
 		} catch (Throwable throwable) {
 			throw new ServiceException("Сервис получения курса биткоина недоступен!");
 		}
-		CoinDeskDtoRs coinDeskDtoRs = responseCoinDesk.getBody();
-		return coinDeskDtoRs;
+		return responseCoinDesk.getBody();
 	}
 }

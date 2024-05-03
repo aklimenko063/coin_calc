@@ -1,13 +1,17 @@
 package org.javaacademy.coin_calc.service;
 
 import lombok.RequiredArgsConstructor;
-import org.javaacademy.coin_calc.dto.*;
+import org.javaacademy.coin_calc.dto.coin.CoinAverageDtoRs;
+import org.javaacademy.coin_calc.dto.coin.CoinHistoryDtoRs;
+import org.javaacademy.coin_calc.dto.coin.CurrencyDtoRs;
+import org.javaacademy.coin_calc.dto.coin.PageDtoRs;
+import org.javaacademy.coin_calc.dto.coin_desk.CoinDeskDtoRs;
+import org.javaacademy.coin_calc.dto.free_currency.CurrencyDtoRq;
 import org.javaacademy.coin_calc.repository.CoinServiceRepository;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 
 import java.math.BigDecimal;

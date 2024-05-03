@@ -1,6 +1,6 @@
 package org.javaacademy.coin_calc.repository;
 
-import org.javaacademy.coin_calc.dto.CoinHistoryDtoRs;
+import org.javaacademy.coin_calc.dto.coin.CoinHistoryDtoRs;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
